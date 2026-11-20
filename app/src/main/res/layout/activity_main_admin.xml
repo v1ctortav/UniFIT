@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainAdminActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_bar_admin"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:background="@color/unifor"
+        android:orientation="horizontal"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_nav_home_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arredondado"
+            android:backgroundTint="@color/bg_menu_nav_bar_item_selected"
+            android:tint="@color/ic_tint_menu_nav_bar_item_selected"
+            app:srcCompat="@drawable/ic_home_filled" />
+
+        <ImageButton
+            android:id="@+id/btn_nav_alunos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arredondado"
+            android:backgroundTint="@color/bg_menu_nav_bar_item_selected"
+            android:tint="@color/ic_tint_menu_nav_bar_item_selected"
+            app:srcCompat="@drawable/ic_alunos" />
+
+        <ImageButton
+            android:id="@+id/btn_nav_treino_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arredondado"
+            android:backgroundTint="@color/bg_menu_nav_bar_item_selected"
+            android:tint="@color/ic_tint_menu_nav_bar_item_selected"
+            app:srcCompat="@drawable/ic_fitness_center" />
+
+        <ImageButton
+            android:id="@+id/btn_nav_aulas_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arredondado"
+            android:backgroundTint="@color/bg_menu_nav_bar_item_selected"
+            android:tint="@color/ic_tint_menu_nav_bar_item_selected"
+            app:srcCompat="@drawable/ic_date_range" />
+
+        <ImageButton
+            android:id="@+id/btn_nav_perfil_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arredondado"
+            android:backgroundTint="@color/bg_menu_nav_bar_item_selected"
+            android:tint="@color/ic_tint_menu_nav_bar_item_selected"
+            app:srcCompat="@drawable/ic_person" />
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frame_conteudo_main_admin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_bar_admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frame_conteudo_tela_cheia_main_admin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

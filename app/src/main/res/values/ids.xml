@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chaves de setTag usadas no código (não são views) -->
+    <item name="spinner_tem_dica" type="id" />
+    <item name="imagem_padrao" type="id" />
+    <item name="spinner_opcoes_dias" type="id" />
+</resources>

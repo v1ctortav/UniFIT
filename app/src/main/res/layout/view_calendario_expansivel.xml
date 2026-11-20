@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_calendario"
+    android:padding="10dp">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollCompacto"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/containerDiasCompactos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/painelExpandido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/botaoMesAnterior"
+                android:layout_width="28dp"
+                android:layout_height="44dp"
+                android:contentDescription="Mês anterior"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textoMesAno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/botaoProximoMes"
+                android:layout_width="28dp"
+                android:layout_height="44dp"
+                android:contentDescription="Próximo mês"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tabelaDiasMes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/botaoAlternar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/bg_calendario_botao_azul"
+        android:contentDescription="Expandir calendário"
+        android:gravity="center"
+        android:text="↓"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+</FrameLayout>

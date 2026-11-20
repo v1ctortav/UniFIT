@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- As capas são encontradas pelo nome (Capas.kt); isto impede que o build de release as remova. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/capa_*" />

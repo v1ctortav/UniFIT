@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:minWidth="100dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@drawable/bg_arredondado"
+    android:maxLines="1"
+    android:textColor="@color/text_tint_toggle_itens_treinos_list_main_item_selected"
+    android:textSize="16sp"
+    app:backgroundTint="@color/bg_toggle_itens_treinos_list_main_item_selected" />
